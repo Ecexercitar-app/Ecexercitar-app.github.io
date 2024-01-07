@@ -36,7 +36,7 @@
 			
 			// Poll-function that looks for new messages
 			var poll_for_new_messages = function(){
-				$.ajax({url: 'https://ecexercitar.000webhostapp.com/App/Chat/messages.json', dataType: 'json', ifModified: true, timeout: 2000, success: function(messages, status){
+				$.ajax({url: 'messages.json', dataType: 'json', ifModified: true, timeout: 2000, success: function(messages, status){
 					// Skip all responses with unmodified data
 					if (!messages)
 						return;
