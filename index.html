@@ -4,11 +4,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   <title>BATE-PAPO</title>
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://ecexercitar.000webhostapp.com/App/Chat/style.css">
 
 
 
-	<script type="text/javascript" src="jquery-1.4.2.min.js"></script>
+	<script type="text/javascript" src="https://ecexercitar.000webhostapp.com/App/Chat/jquery-1.4.2.min.js"></script>
 	<script type="text/javascript">
 		// <![CDATA[
 		$(document).ready(function(){
@@ -36,7 +36,7 @@
 			
 			// Poll-function that looks for new messages
 			var poll_for_new_messages = function(){
-				$.ajax({url: 'messages.json', dataType: 'json', ifModified: true, timeout: 2000, success: function(messages, status){
+				$.ajax({url: 'https://ecexercitar.000webhostapp.com/App/Chat/messages.json', dataType: 'json', ifModified: true, timeout: 2000, success: function(messages, status){
 					// Skip all responses with unmodified data
 					if (!messages)
 						return;
@@ -124,7 +124,7 @@
 
 
 
-<form action="example.php" method="post">
+<form action="https://ecexercitar.000webhostapp.com/App/Chat/example.php" method="post">
 	
 	<p><center>
 		<label>
